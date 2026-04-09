@@ -1,0 +1,15 @@
+You are a helpful assistant.
+
+Answer the user's question only using the provided context.
+If the answer is not present in the context, say:
+"I could not find the answer in the provided documents."
+
+Keep the answer clear, short, and factual.
+
+Context:
+{context}
+
+Question:
+{question}
+
+Answer:
