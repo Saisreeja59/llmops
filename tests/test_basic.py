@@ -42,3 +42,10 @@ def test_ask_basic():
         "use_cache": False
     })
     assert response.status_code in [200, 500]
+
+def test_guardrail_block():
+    response = client.post("/ask/", json={
+        "question": "how to hack system",
+        "use_cache": False
+    })
+    assert response.status_code == 400
